@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTextFieldPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v2z-3A-DPS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sn5-1d-2Ts"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EaL-fs-u5t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvw-GB-zGL" customClass="CustomTextField" customModule="CustomTextFieldPOC" customModuleProvider="target">
+                                <rect key="frame" x="16" y="134" width="343" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TextFieldLabel" value="Umesh"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TFLabelString" value="UMESH"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="TFText" value="UMESH Demo"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaF-bO-fbd">
+                                <rect key="frame" x="94" y="577" width="187" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="oPo-TK-7pu"/>
+                                    <constraint firstAttribute="width" constant="187" id="xT5-re-le9"/>
+                                </constraints>
+                                <state key="normal" title="Show Alert"/>
+                                <connections>
+                                    <action selector="showAlertButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p7O-TN-FwI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JaF-bO-fbd" firstAttribute="leading" secondItem="EaL-fs-u5t" secondAttribute="leading" constant="94" id="Du2-HQ-BdH"/>
+                            <constraint firstItem="Sn5-1d-2Ts" firstAttribute="top" secondItem="JaF-bO-fbd" secondAttribute="bottom" constant="51" id="JQU-0T-Rtl"/>
+                            <constraint firstItem="rvw-GB-zGL" firstAttribute="top" secondItem="v2z-3A-DPS" secondAttribute="bottom" constant="114" id="LyJ-jP-AsM"/>
+                            <constraint firstAttribute="trailing" secondItem="JaF-bO-fbd" secondAttribute="trailing" constant="94" id="Op3-bu-SiS"/>
+                            <constraint firstAttribute="trailing" secondItem="rvw-GB-zGL" secondAttribute="trailing" constant="16" id="SJi-c4-LCT"/>
+                            <constraint firstItem="rvw-GB-zGL" firstAttribute="leading" secondItem="EaL-fs-u5t" secondAttribute="leading" constant="16" id="iRg-Q7-OIL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ticketNumberTextField" destination="rvw-GB-zGL" id="YY3-lI-12H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
